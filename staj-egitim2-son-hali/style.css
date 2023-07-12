@@ -1,0 +1,169 @@
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.container {
+    margin: auto;
+}
+
+.resim {
+    width: 100%;
+    height: auto;
+}
+
+.hizala {
+    text-align: left;
+}
+
+.navbar-brand {
+    text-align: center;
+    font-size: 30px;
+}
+
+.logo-kucuk {
+    font-size: 18px !important;
+    display: block;
+}
+
+.highlight {
+    color: #FCBA3E;
+    font-size: 40px;
+}
+
+.nav-link {
+    margin-left: 40px;
+}
+
+.navbar {
+    background-color: #25363D !important;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background-color: #FCBA3E;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.slide-resim-icerik {
+    border: 4px solid #25363D;
+    padding: 25px;
+}
+
+.slide-resim {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    /*boyutlandırma yaptığında resmin kalitesini bozmaz.*/
+}
+
+.slide {
+    width: 100%;
+    height: 550px;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    text-align: left;
+    border-radius: 0;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+
+.mobile-footer {
+    padding: 60px;
+    background-color: #212529;
+    font-size: 14px;
+    color: white;
+}
+
+.footer {
+    text-align: left !important;
+    color: #FCBA3E;
+}
+
+.footer p {
+    border-bottom: 1px solid #FCBA3E;
+    padding-bottom: 10px;
+}
+
+.mobile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-footer .container {
+    padding: 10px;
+}
+
+.mobile-footer .row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mobile-footer .col {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+    .mobile-footer .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .col {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .carousel {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .carousel-inner,
+    .carousel-item,
+    .slide-resim-icerik,
+    .slide-resim {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 50%;
+        height: auto;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    .carousel-control-next {
+        right: 0;
+        transform: translate(0, -50%);
+    }
+}
+
+@media (max-width: 850px) {
+    .col {
+        flex: 0 0 100%;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+}
